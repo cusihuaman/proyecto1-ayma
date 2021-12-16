@@ -72,6 +72,10 @@ main{
 .movie-info span.red{
     color: red;
 }
+.movie-info span.red{
+    color: orange;
+}
+
 .overview{
     background-color: #eee;
     padding: 2rem;
