@@ -1,0 +1,96 @@
+/*  */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+p{
+    color: #fff;
+}
+.logo{
+    width: 150px;
+}
+.text{
+    text-transform: uppercase;
+}
+.nav-btn{
+    color: white;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 20px;
+}
+.open-btn{
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+/* .bi{
+    color: white;
+} */
+.nav.visible{
+    transform: translateX(0);
+}
+.nav-white{
+    background-color: #ddd;
+    width: 60%;
+    max-width: 480px;
+    min-width: 320px;
+    transition-delay:.4s ;
+}
+.nav-red{
+    background-color: red;
+    width: 95%;
+    transition-delay: 0.2s;
+}
+.nav-red.visible{
+    transition-delay: 0.2s;
+}
+.nav-black{
+    background-color: #000;
+    width: 95%;
+    padding: 40px;
+    position: relative;
+    transition-delay: 0s;
+}
+.nav-black.visible{
+    transition-delay: 0.4s;
+}
+.close-btn{
+    position: absolute;
+    top: 40px;
+    right: 30px;
+}
+.list{
+    list-style-type: none;
+    padding: 0;
+}
+.list li{
+    margin: 20px 0;
+}
+.list li a{
+    color: #ddd;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.list ul{
+    list-style-type: none;
+    padding-left: 20px;
+}
