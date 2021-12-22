@@ -1,0 +1,62 @@
+/*  */
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10px;
+}
+.testomial-container{
+    background-color: #476ce4;
+    color: #fff;
+    border-radius: 15px;
+    margin: 20px auto;
+    padding: 10px 10px;
+    max-width: 300px;
+    position: relative;
+}
+.user .user-detals{
+    margin-left: 10px;
+}
+.user .username{
+    margin: 0;
+}
+.user .rol{
+    font-weight: normal;
+    margin: 4px 0;
+}
+.progress-bar{
+    background-color: #fff;
+    height: 2px;
+    width: 100%;
+    animation: grow 10s linear infinite;
+    transform-origin: left;
+}
+@keyframes grow{
+    0%{
+        transform: scaleX(0);
+    }
+}
+@media (max-width: 768px){
+    .testomial-container{
+        padding: 20px 30px;
+    }
+}
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user .user-image{
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    object-fit: cover;
+}
